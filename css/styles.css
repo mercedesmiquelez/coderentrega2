@@ -286,6 +286,22 @@ footer {
     justify-content: space-around;
 }
 
+.imagenessalud img{
+    width: 600px;
+    height: 400px;
+}
+
+.imagenessalud {
+    margin: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 400px 400px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
+
 .formulario{
     margin: 30px;
     display: flex;
