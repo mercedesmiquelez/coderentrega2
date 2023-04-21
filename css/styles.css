@@ -78,7 +78,7 @@ header {
 
 .fotofondo{
     height: 500px;
-    background-image: url(/images/dietasaludable.jpeg);
+    background-image: url(./images/dietasaludable.jpeg);
     background-position: center;
 }
 
