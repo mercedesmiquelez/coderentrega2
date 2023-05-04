@@ -63,6 +63,76 @@ footer .logofooter {
   margin: 10px;
 }
 
+body {
+  background-color: #F7EDE2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+body .gridcontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 0.3fr auto auto 1fr;
+  grid-template-areas: "header header" "nav nav" "fotofondo fotofondo" "actividades actividades" "footer footer";
+  align-items: center;
+}
+body .gridcontainer div {
+  margin: 15px;
+  justify-items: center;
+}
+body .gridcontainer .fotofondo {
+  height: 500px;
+  background-image: url(../images/dietasaludable.jpeg);
+  background-position: center;
+  grid-area: fotofondo;
+}
+body .gridcontainer .fotofondo .contenido-fotofondo {
+  width: 98%;
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+}
+body .gridcontainer .fotofondo .contenido-fotofondo .colorblanco {
+  color: antiquewhite;
+  font-weight: 500;
+}
+body .gridcontainer .actividades {
+  grid-area: actividades;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #4b4e4e;
+}
+body .gridcontainer .actividades .imagenesconectadas {
+  margin: 20px 20px;
+}
+body .gridcontainer .actividades .imagenesconectadas .img {
+  border-radius: 10px;
+}
+body .gridcontainer .actividades .imagenesconectadas .textoimagen {
+  width: 400px;
+}
+body .gridcontainer .actividades .imagenesconectadas .comments {
+  margin: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #F28482;
+  overflow: hidden;
+  padding: 8px;
+  border-style: solid;
+}
+body .gridcontainer .actividades .imagenesconectadas .comments:hover {
+  background-color: #F28482;
+  padding: 8px;
+  color: #eee0e0;
+}
+
 .navpag {
   background-color: #84A59D;
   align-items: center;
@@ -217,6 +287,9 @@ footer .logofooter {
   border-radius: 10px;
   opacity: 0.8;
   filter: alpha(opacity=80);
+}
+.contactoimg img:hover {
+  transform: scale(1.08, 1.08);
 }
 
 .form-control {
@@ -399,19 +472,8 @@ ol, ul {
     font-weight: 300;
     font-size: 18px;
   }
-  .actividades div {
-    margin: auto;
+  body .gridcontainer .actividades .imagenesconectadas .textoimagen {
     width: 90vw;
-    grid-template-columns: 80%;
-  }
-  .actividades div .textoimagen {
-    width: 90%;
-  }
-  .imagenesconectada {
-    margin-left: 20px;
-  }
-  .imagenesconectada .textoimagen {
-    width: 300px;
   }
   .navpag ul {
     flex-direction: column;
@@ -509,76 +571,6 @@ ol, ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: #F7EDE2;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  text-align: center;
-}
-body .gridcontainer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.5fr 0.3fr auto auto 1fr;
-  grid-template-areas: "header header" "nav nav" "fotofondo fotofondo" "actividades actividades" "footer footer";
-  align-items: center;
-}
-body .gridcontainer div {
-  margin: 15px;
-  justify-items: center;
-}
-body .gridcontainer .fotofondo {
-  height: 500px;
-  background-image: url(../images/dietasaludable.jpeg);
-  background-position: center;
-  grid-area: fotofondo;
-}
-body .gridcontainer .fotofondo .contenido-fotofondo {
-  width: 98%;
-  background-color: rgba(51, 47, 47, 0.8);
-  box-shadow: 2px 4px 8px rgb(68, 67, 67);
-  border-radius: 5px;
-  text-align: center;
-  padding: 50px 0;
-  margin: 0 auto;
-  position: relative;
-  top: 200px;
-}
-body .gridcontainer .fotofondo .contenido-fotofondo .colorblanco {
-  color: antiquewhite;
-  font-weight: 500;
-}
-body .gridcontainer .actividades {
-  grid-area: actividades;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  color: #4b4e4e;
-}
-body .gridcontainer .actividades .imagenesconectadas {
-  margin: 20px 20px;
-}
-body .gridcontainer .actividades .imagenesconectadas .img {
-  border-radius: 10px;
-}
-body .gridcontainer .actividades .imagenesconectadas .textoimagen {
-  width: 400px;
-}
-body .gridcontainer .actividades .imagenesconectadas .comments {
-  margin: 15px;
-  text-decoration: none;
-  border-radius: 6px;
-  color: #F28482;
-  overflow: hidden;
-  padding: 8px;
-  border-style: solid;
-}
-body .gridcontainer .actividades .imagenesconectadas .comments:hover {
-  background-color: #F28482;
-  padding: 8px;
-  color: #eee0e0;
 }
 
 /*# sourceMappingURL=styles.css.map */

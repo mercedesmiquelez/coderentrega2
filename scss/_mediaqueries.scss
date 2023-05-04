@@ -31,22 +31,18 @@
         }
     }
 
-    .actividades div{
-        margin: auto;
-        width: 90vw;
-        grid-template-columns: 80%;
-        .textoimagen{
-            width: 90%;
+    body{
+        .gridcontainer{
+            .actividades{
+                .imagenesconectadas{
+                    .textoimagen{
+                        width: 90vw;
+                    }
+                }
+            }
         }
     }
     
-    .imagenesconectada{
-        margin-left: 20px;
-        .textoimagen {
-            width: 300px;
-        }
-    }
-
     .navpag ul{
         flex-direction: column;
         align-items: center;
