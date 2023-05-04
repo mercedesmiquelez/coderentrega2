@@ -12,10 +12,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&family=Krub:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,500&family=Zilla+Slab:ital,wght@0,600;1,400;1,600&display=swap"
         rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body>
+<body class="container-fuid">
+    
     <header>
         <!-- Indice de navegacion + logo -->
         <div class="navpag">
@@ -29,38 +31,120 @@
             </ul>
         </div>
     </header>
-                <!-- Contenido pagina -->
-    <main>
-        <section id="fotofondo">
-            <div id="contenido-fotofondo">
-                <h2 class="colorblanco">Realizar ejercicio ayuda a redudir el estres y mantiene fuertes tus habilidades
-                    para pensar y aprender.</h2>
-            </div>
+         <!-- Carousel inicio -->
+    
+        <section class="row">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/car1.jpg" class="d-block w-100" alt="vida saludable">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/car2.jpg" class="d-block w-100" alt="vida saludable">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/car3.jpg" class="d-block w-100" alt="vida saludable">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/car4.jpg" class="d-block w-100" alt="vida saludable">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/car5.jpg" class="d-block w-100" alt="vida saludable">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/car6.jpg" class="d-block w-100" alt="vida saludable">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
 
-    </main>
-    <section>
-        <article  class="contenidopagina">La importancia de realizar actividad fisica. Considerando que la serotonina es un neurotransmisor que
-            utiliza el cuerpo para enviar mensajes entre las células nerviosas, influyendo en el estado de ánimo, las
-            emociones, el apetito y la digestión; y que la noradrenalina es una hormona producida por las glándulas
-            suprarrenales y liberada en el torrente sanguíneo para transmitir señales nerviosas que ayudan a regular las
-            funciones cerebrales como el humor, concentración, atención y memoria, la especialista destacó que “por
-            medio del ejercicio físico, la serotonina aumenta su latencia o el tiempo que está en el cerebro, con lo
-            cual se asimila de mejor manera. También se regula la secreción de noradrenalina, así aumenta la sensación
-            de calma en el organismo”.</p>
-        </article>
+        <section class="tips">
+            <div class="card mb-2">
+                <img src="../images/ejercicio1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong> Trabajar en equipo</strong></h5>
+                  <p class="card-text"> Un companero para ejercitar puede ayudarte y motivarte a llegar al objetivo que tanto te cuesta solo.</p>
+                  <p class="card-text"><small class="text-body-secondary">Mira experiencias en <a href="../pages/comentarios.html" class="linkcomentarios">comentarios</a></small></p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <img src="../images/ejercicio3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Actividades en familia</strong></h5>
+                  <p class="card-text"> Encontrar actividades para realizar con la familia es muy beneficioso ya que generamos conciencia a los mas chicos a traves del ejemplo.</p>
+                  <p class="card-text"><small class="text-body-secondary">Mira experiencias en <a href="../pages/comentarios.html" class="linkcomentarios">comentarios</a></small></p>
+                </div>
+        </section>
 
-        <article class="imagenessalud">
-            <img src="../images/two.jpg" alt="deportes" title="Niños hacen deporte" class="fotosdeseccion">
-            <img src="../images/ejerciciooficina.jpg" alt="ejerciciooficina" title="Ejercicio en oficina" class="fotosdeseccion">
-            <img src="../images/ejercicioporedad.jpg" alt="ejerciciostodos" title="Deporte por edad" class="fotosdeseccion">
-            <img src="../images/deportetodaflia.jpg" alt="todalafamiliaejercita" title="Ejercicio todas las edades" class="fotosdeseccion">
-        </article>
-        <article>
-            <img src="../images/deportes.jpg" alt="Actividad fisica" title="Actividad fisica" class="fotofondo">
-        </article>
-    </section>
+        <section class="tips">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><strong> Al aire libre</strong></h5>
+                  <p class="card-text">Realizar actividades al aire libre relaja al cuerpo y permite realizar mayor actividad con menos esfuerzo.</p>
+                  <p class="card-text"><small class="text-body-secondary">Mira experiencias en <a href="../pages/comentarios.html" class="linkcomentarios">comentarios</a></small></p>
+                </div>
+                <img src="../images/ejercicio2.jpg" class="card-img-bottom" alt="...">
+              </div>
 
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><strong> Hidratacion primero</strong></h5>
+                  <p class="card-text">Es muy importante acostumbrarse a tomar agua a diario y especialmente al realizar actividad fisica.</p>
+                  <p class="card-text"><small class="text-body-secondary">Mira experiencias en <a href="../pages/comentarios.html" class="linkcomentarios">comentarios</a></small></p>
+                </div>
+                <img src="../images/ejercicio4.jpg" class="card-img-bottom" alt="...">
+              </div>
+        </section>
+
+        <section class="tips">
+            <div class="card mb-2">
+                <img src="../images/ejercicio5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong> No importa tu edad</strong></h5>
+                  <p class="card-text"> Para todas las edades hay actividades en las que uno se puede sentir comodo y te van a ayudar a vivir de mejor forma.</p>
+                  <p class="card-text"><small class="text-body-secondary">Mira experiencias en <a href="../pages/comentarios.html" class="linkcomentarios">comentarios</a></small></p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <img src="../images/ejercicio6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong> Al agua pato</strong></h5>
+                  <p class="card-text"> Ciertas enfermedades o dolores nos limitan a realizar actividades de impacto, el agua es un aliado para ejercitar y aliviar dolores.</p>
+                  <p class="card-text"><small class="text-body-secondary">Mira experiencias en <a href="../pages/comentarios.html" class="linkcomentarios">comentarios</a></small></p>
+                </div>
+        </section>
+
+        <section class="tips">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><strong> Encontra tu pasion</strong></h5>
+                  <p class="card-text">Probar distintas actividades para encontrar lo que te apasiona es un buen ejercicio para mantener esta actividad en el tiempo.</p>
+                  <p class="card-text"><small class="text-body-secondary">Mira experiencias en <a href="../pages/comentarios.html" class="linkcomentarios">comentarios</a></small></p>
+                </div>
+                <img src="../images/ejercicio7.jpg" class="card-img-bottom" alt="...">
+              </div>
+
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><strong> Cuerpo y mente</strong></h5>
+                  <p class="card-text">Ciertas actividades como puede ser el golf, permite conectar con la naturaleza mientras se realiza la actividad y brinda muchos beneficios.</p>
+                  <p class="card-text"><small class="text-body-secondary">Mira experiencias en <a href="../pages/comentarios.html" class="linkcomentarios">comentarios</a></small></p>
+                </div>
+                <img src="../images/ejercicio8.jpg" class="card-img-bottom" alt="...">
+              </div>
+        </section>
+
+    
 <!-- Pie de pagina -->
 
 <footer>
@@ -71,6 +155,7 @@
     <a href="../pages/contacto.html" class="footer">Contacto</a>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

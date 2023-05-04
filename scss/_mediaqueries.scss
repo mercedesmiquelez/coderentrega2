@@ -1,0 +1,155 @@
+/* TamaÃ±o mobile 480px */
+@media (max-width: 480px) {
+    body{
+        font-size: 1rem;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            width: 80px;
+            padding: 2px;
+        }
+    } 
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotofondo{
+        height: 200px;
+        .contenido-fotofondo{
+            width: 90%;
+            padding: 8px;
+            top: 60px;
+            .colorblanco {
+                font-weight: 300;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .actividades div{
+        margin: auto;
+        width: 90vw;
+        grid-template-columns: 80%;
+        .textoimagen{
+            width: 90%;
+        }
+    }
+    
+    .imagenesconectada{
+        margin-left: 20px;
+        .textoimagen {
+            width: 300px;
+        }
+    }
+
+    .navpag ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        img{
+            display: none;
+         }
+    }
+
+    .navbar-brand{
+        width: 120px;
+    }
+    
+    .gallerycontainer{
+        display: grid;
+        grid-template-columns: 1.1fr;
+        grid-template-rows: repeat(6,200px);
+        gap: 10px 5px;
+        grid-template-areas: 
+        'imagenuno'
+        'imagendos'
+        'imagenseis'
+        'imagencuatro'
+        'imagencinco'
+        'imagentres';
+        justify-content: center;
+        padding: 15px;
+        .imagenuno{
+            background-size: fill;
+        }
+        .imagendos{
+            background-size: contain;
+        }
+        .imagentres{
+            background-size: cover;
+        }
+        .imagencuatro{
+            background-size: cover;
+        }
+        .imagencinco{
+            background-size: cover;
+        }
+        .imagenseis{
+            background-size: cover;
+        }
+    }
+
+    .contenidopagina{
+        text-align: start;
+        font-size: 15px;
+        margin: 15px;
+        ul{
+            margin-left: 0px;
+        }
+    }
+
+    .imagenestexto{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 0;
+        .nosemuestrachico{
+            display: none;
+        }
+    }
+
+    .fotoaliment{
+        height: 200px;
+        .contenido-fotofondoaliment {
+            width: 90%;
+            padding: 8px;
+            top: 60px;
+            .colorblanco {
+                font-weight: 100;
+                font-size: 18px;
+            }
+        }
+    }
+    
+    .tips{
+        width: 90%;
+        margin: 10px;
+        display: block;
+        .card {
+            margin: 10px;
+            padding: 0;
+            width: auto;
+            height:auto;
+            .card-title{
+                font-size: 25px;
+            }
+        }
+    }
+    .contactoimg{
+        flex-direction: column;
+    }
+
+    .img-fluidno{
+        display: none;
+    }
+}

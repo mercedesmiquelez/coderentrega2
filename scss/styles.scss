@@ -1,0 +1,91 @@
+@import "variables";
+@import "generales";
+@import "alimentacion";
+@import "comentarios";
+@import "contacto";
+@import "generales";
+@import "saludmental";
+@import "ejerciciofisico";
+@import "mediaqueries";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $colorFondo;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    .gridcontainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 0.3fr auto auto 1fr;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "fotofondo fotofondo"
+        "actividades actividades"
+        "footer footer";
+        align-items: center;
+        div{
+            margin: 15px;
+            justify-items: center;
+        }
+        .fotofondo{
+            height: 500px;
+            background-image: url(../images/dietasaludable.jpeg);
+            background-position: center;
+            grid-area: fotofondo;
+            .contenido-fotofondo {
+                width: 98%;
+                background-color: rgba(51, 47, 47, 0.8);
+                box-shadow: 2px 4px 8px rgb(68, 67, 67);
+                border-radius: 5px;
+                text-align: center;
+                padding: 50px 0;
+                margin: 0 auto;
+                position: relative;
+                top: 200px;
+                .colorblanco {
+                    color: antiquewhite;
+                    font-weight: 500;
+                }
+            }
+        } 
+        .actividades {
+            grid-area: actividades;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            color: #4b4e4e;
+            .imagenesconectadas{
+                margin: 20px 20px;
+                .img{
+                    border-radius: 10px;
+                }
+                .textoimagen {
+                    width: 400px;
+                }
+                .comments{
+                    margin: 15px;
+                    text-decoration: none;
+                    border-radius: 6px;
+                    color: $colorSalmon;
+                    overflow: hidden;
+                    padding: 8px;
+                    border-style: solid;  
+                    &:hover{
+                        background-color: $colorSalmon;
+                        padding: 8px;
+                        color: #eee0e0;
+                    }
+                }
+            }
+        }
+  
+    }
+}

@@ -1,0 +1,23 @@
+ol, ul {
+    padding-left: 0;
+}
+.tips{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .card {
+        margin: 20px;
+        padding: 10px;
+        width: 28rem;
+        height: 35rem;
+        .card-title{
+            font-size: 25px;
+            color: $colorTexto;
+        }
+        .linkcomentarios{
+            text-decoration: none;
+            color: $colorSalmon;
+        }
+    }
+}

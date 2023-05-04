@@ -1,473 +1,584 @@
-/* reset css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #F7EDE2;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-}
-
-img{
-    max-width: 100%;
-}
-
-.toggle-menu {
-    position: absolute;
-    top: 0.5rem;
-    right: 1.5rem;
-    cursor: pointer;
-    filter: invert(1);
-    width: 40px;
-    display: none;
-}
-
-.gridcontainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr 0.3fr auto auto 1fr;
-    grid-template-areas:
-    "header header"
-    "nav nav"
-    "fotofondo fotofondo"
-    "actividades actividades"
-    "footer footer";
-    align-items: center;
-}
-
-.gridcontainer div{
-    margin: 15px;
-    justify-items: center;
-}
-
-.header{
-    grid-area: header;
-}
-
-header {
-    background-color: #84A59D;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-
-.header__logo{
-    width: 110px;
-    padding: 6px;
-    object-fit: contain;
-}
-
-.link{
-    text-decoration: none;
-    margin: 10px;
-    padding: 8px;
-    color: #f6efe7;
-    border-radius: 5px;
-}
-
-.link:hover{
-    background-color: #bfd7b3;
-    color: #3d6c60;
-}
-
-.fotofondo{
-    height: 500px;
-    background-image: url(../images/dietasaludable.jpeg);
-    background-position: center;
-}
-
-.fotofondo {
-    grid-area: fotofondo;
-}
-
-.contenido-fotofondo {
-    width: 98%;
-    background-color: rgba(51, 47, 47, 0.8);
-    box-shadow: 2px 4px 8px rgb(68, 67, 67);
-    border-radius: 5px;
-    text-align: center;
-    padding: 50px 0;
-    margin: 0 auto;
-    position: relative;
-    top: 200px;
-}
-
-.colorblanco {
-    color: antiquewhite;
-    font-weight: 900;
-}
-
-nav{
-    grid-area: nav;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    background-color: #F28482;
+@charset "UTF-8";
+img {
+  max-width: 100%;
 }
 
 li {
-    padding: 10px;
-    list-style-type: none;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.header {
+  grid-area: header;
+  background-color: #84A59D;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.header .header__logo {
+  width: 110px;
+  padding: 6px;
+}
+
+nav {
+  grid-area: nav;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #F28482;
+}
+nav ul .link {
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px;
+  color: #f6efe7;
+  border-radius: 5px;
+}
+nav ul .link:hover {
+  background-color: #bfd7b3;
+  color: #3d6c60;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  background-color: #84A59D;
+  color: #F7EDE2;
+  align-items: center;
+}
+footer .footer {
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 8px;
+  color: #3d6c60;
+  background-color: #bfd7b3;
+  padding: 10px;
+}
+footer .logofooter {
+  max-width: 6%;
+  margin: 10px;
 }
 
 .navpag {
-    background-color: #84A59D;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
+  background-color: #84A59D;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.navpag ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navpag ul .linkdark {
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px;
+  color: #f6efe7;
+  font-weight: 700;
+  font-size: x-large;
+  border-radius: 5px;
+}
+.navpag ul .icon {
+  height: 50px;
+  padding: 5px;
+}
+.navpag ul .link {
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px;
+  color: #f6efe7;
+  border-radius: 5px;
+}
+.navpag ul .link:hover {
+  background-color: #bfd7b3;
+  color: #3d6c60;
 }
 
-.navpag ul{
-    display: flex;
-    justify-content: space-evenly;
+.fotoaliment {
+  height: 300px;
+  background-image: url(../images/saludable.jpg);
+  background-position: center;
+  grid-area: fotofondo;
+}
+.fotoaliment .contenido-fotofondoaliment {
+  width: 80%;
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 5px auto;
+  position: relative;
+  top: 100px;
+}
+.fotoaliment .contenido-fotofondoaliment .colorblanco {
+  color: antiquewhite;
+  font-size: 1.6rem;
 }
 
-.actividades {
-    grid-area: actividades;
+.gallerycontainer {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px 10px;
+  grid-template-areas: "imagenuno imagenuno imagenuno imagenuno imagendos" "imagentres imagentres imagenseis imagencinco imagencinco" "imagentres imagentres imagenseis imagencuatro imagencuatro";
+  justify-content: center;
+  padding: 10px;
+}
+.gallerycontainer .imagenuno {
+  grid-area: imagenuno;
+  background-image: url(../images/verduras.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.gallerycontainer .imagendos {
+  grid-area: imagendos;
+  background-image: url(../images/carnes.jpg);
+  background-position: center;
+}
+.gallerycontainer .imagentres {
+  grid-area: imagentres;
+  background-image: url(../images/lacteos.jpg);
+  background-position: center;
+}
+.gallerycontainer .imagencuatro {
+  grid-area: imagencuatro;
+  background-image: url(../images/frutossecos.jpeg);
+  background-position: center;
+}
+.gallerycontainer .imagencinco {
+  grid-area: imagencinco;
+  background-image: url(../images/legumbres.jpg);
+  background-position: fill;
+}
+.gallerycontainer .imagenseis {
+  grid-area: imagenseis;
+  background-image: url(../images/healthyperson.webp);
+  background-position: center;
 }
 
-.actividades{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    color: #4b4e4e;
+.contenidopagina {
+  text-align: justify;
+  margin: 20px;
+  color: #F28482;
+  font-weight: 500;
+  font-size: 20px;
+  width: 95%;
 }
 
-.comidasana{
-    margin: 20px 20px;
+.imagenestexto {
+  width: 90%;
+  margin-left: 50px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.imagenestexto img {
+  width: 300px;
+  border: 2px solid rgb(194, 193, 193);
+  border-radius: 5px;
 }
 
-.img{
-    border-radius: 10px;
+.encabezado__titulo {
+  font-weight: 300;
 }
 
-.linkdark {
-    text-decoration: none;
-    margin: 10px;
-    padding: 8px;
-    color: #f6efe7;
-    font-weight: 700;
-    font-size: x-large;
-    border-radius: 5px;
+.navbar-brand {
+  width: 200px;
 }
 
-.comments{
-    margin: 15px;
-    text-decoration: none;
-    border-radius: 6px;
-    color: #F28482;
-    overflow: hidden;
-    padding: 8px;
-    border-style: solid;  
+.row {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.row .card {
+  width: 18rem;
+  margin: 20px;
+}
+.row .card img {
+  padding: 8px;
+}
+.row .card .btn {
+  background-color: #F28482;
+  color: #f6efe7;
 }
 
-.comments:hover{
-    background-color: #F28482;
-    padding: 8px;
-    color: #eee0e0;
+.contactoimg {
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+}
+.contactoimg img {
+  border-radius: 10px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 
-.footer{
-    text-decoration: none;
-    margin: 10px;
-    border-radius: 8px;
-    color: #3d6c60;
-    background-color: #bfd7b3;
-    padding: 10px;
+.form-control {
+  color: #F28482;
 }
 
-.logofooter{
-    max-width: 6%;
-    margin: 10px;
+.img-fluid {
+  margin: 20px;
+  height: 270px;
+  object-fit: contain;
 }
 
-.textoimagen {
-    width: 400px;
+.img-fluidno {
+  margin: 20px;
+  height: 270px;
+  object-fit: contain;
+}
+
+.col-md-6 {
+  width: 90%;
+}
+
+.row {
+  width: 90%;
+}
+
+.btn {
+  background-color: #84A59D;
+  color: antiquewhite;
+  border: #24302d;
+}
+
+.alert {
+  margin: 15px;
+  padding: 20px;
+  color: antiquewhite;
+  background-color: #F28482;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+.header {
+  grid-area: header;
+  background-color: #84A59D;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.header .header__logo {
+  width: 110px;
+  padding: 6px;
+}
+
+nav {
+  grid-area: nav;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #F28482;
+}
+nav ul .link {
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px;
+  color: #f6efe7;
+  border-radius: 5px;
+}
+nav ul .link:hover {
+  background-color: #bfd7b3;
+  color: #3d6c60;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  background-color: #84A59D;
+  color: #F7EDE2;
+  align-items: center;
+}
+footer .footer {
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 8px;
+  color: #3d6c60;
+  background-color: #bfd7b3;
+  padding: 10px;
+}
+footer .logofooter {
+  max-width: 6%;
+  margin: 10px;
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-    background-color: #84A59D;
-    color: #F7EDE2;
-    align-items: center;
+ol, ul {
+  padding-left: 0;
 }
 
-.contenidopagina{
-    margin: 20px;
-    color: #F28482;
-    font-weight: 500;
-    font-size: 20px;
-    width: 80%;
-    text-align: center;
-    margin-left: 100px;
+.tips {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.tips .card {
+  margin: 20px;
+  padding: 10px;
+  width: 28rem;
+  height: 35rem;
+}
+.tips .card .card-title {
+  font-size: 25px;
+  color: #4b4e4e;
+}
+.tips .card .linkcomentarios {
+  text-decoration: none;
+  color: #F28482;
 }
 
-.gallerycontainer{
-    display: grid;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: repeat(3, 200px);
-    gap: 10px 10px;
-    grid-template-areas: 'imagenuno imagenuno imagenuno imagenuno imagendos'
-                        'imagentres imagentres imagenseis imagencinco imagencinco'
-                        'imagentres imagentres imagenseis imagencuatro imagencuatro';
-    justify-content: center;
-    padding: 10px;
+ol, ul {
+  padding-left: 0;
 }
 
-.imagenuno {
-    grid-area: imagenuno;
-    background-image: url(../images/verduras.jpg);
-    background-position: center;
-    background-size: cover;
+.tips {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
-
-.imagendos {
-    grid-area: imagendos;
-    background-image: url(../images/carnes.jpg);
-    background-position: center;
+.tips .card {
+  margin: 20px;
+  padding: 10px;
+  width: 28rem;
+  height: 35rem;
 }
-
-.imagentres {
-    grid-area: imagentres;
-    background-image: url(../images/lacteos.jpg);
-    background-position: center;
+.tips .card .card-title {
+  font-size: 25px;
+  color: #4b4e4e;
 }
-
-.imagencuatro {
-    grid-area: imagencuatro;
-    background-image: url(../images/frutossecos.jpeg);
-    background-position: center;
-}
-
-.imagencinco {
-    grid-area: imagencinco;
-    background-image: url(../images/legumbres.jpg);
-    background-position: fill;
-}
-
-.imagenseis {
-    grid-area: imagenseis;
-    background-image: url(../images/healthyperson.webp);
-    background-position: center;
-}
-
-.headerone {
-    display: flex;
-    justify-content: center;
-}
-
-.navizq ul,
-.navder ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-.icon{
-    height: 50px;
-    padding: 5px;
-}
-
-.contactopagina{
-    display: flex;
-    justify-content: space-around;
-}
-
-.imagenessalud img{
-    width: 600px;
-    height: 400px;
-}
-
-.imagenessalud {
-    margin: 30px;
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: 400px 400px;
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-content: center;
-}
-
-.formulario{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: flex-start;
-
-}
-
-.navbar-brand{
-    width: 200px;
-}
-
-.botones{
-    border: 1px solid;
-    padding: 10px;
-    margin: 5px;
-    background-color: #2e8b7d;
-    color: #ffffff;
-    border-radius: 10px;
-}
-
-.texto{
-    color: #606c38;
-}
-
-.gracias{
-    display: none;
-    color: #F28482;
-    font-style: italic;
-}
-
-input:focus{
-    height: 30px;
-    background-color: #aab9b5;
-    border-radius: 6px;
-}
-
-input[type="checkbox"]:checked{
-    box-shadow: 0 0 0 2px rgb(86, 87, 98);
-}
-
-input[type="checkbox"]:checked + .gracias{
-    display: initial;
-}
-
-.card{
-    margin: 20px;
-}
-
-.btn{
-    background-color: #F28482;
-    color: #f6efe7;
-}
-
-.encabezado__titulo{
-    font-weight: 300;
+.tips .card .linkcomentarios {
+  text-decoration: none;
+  color: #F28482;
 }
 
 /* TamaÃ±o mobile 480px */
 @media (max-width: 480px) {
-    .header{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo{
-        width: 80px;
-        padding: 2px;
-    }
-
-    .fotofondo{
-        height: 200px;
-    }
-    .contenido-fotofondo {
-        width: 90%;
-
-        padding: 8px;
-        top: 60px;
-    }
-
-    .colorblanco {
-        font-weight: 100;
-        font-size: 20px;
-    }
-
-    .comidasana{
-        margin-left: 20px;
-    }
-
-    .textoimagen {
-        width: 300px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navpag ul{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    body{
-        font-size: 1rem;
-    }
-
-    .actividades div{
-        grid-template-columns: 100%;
-    }
-
-    footer img{
-       display: none;
-    }
-
-    footer{
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-
-    .navbar-brand{
-        width: 120px;
-    }
-    
-    .gallerycontainer{
-        display: grid;
-        grid-template-columns: 1.1fr;
-        grid-template-rows: repeat(6,200px);
-        gap: 10px 5px;
-        grid-template-areas: 
-        'imagenuno'
-        'imagendos'
-        'imagenseis'
-        'imagencuatro'
-        'imagencinco'
-        'imagentres';
-        justify-content: center;
-        padding: 15px;
-    }
-
-    .contenidopagina{
-        font-weight: 300;
-        font-size: 15px;
-        margin-left: 40px;
-    }
-    
-    .imagenuno{
-        background-size: fill;
-    }
-    .imagendos{
-        background-size: contain;
-    }
-    .imagentres{
-        background-size: cover;
-    }
-    .imagencuatro{
-        background-size: cover;
-    }
-    .imagencinco{
-        background-size: cover;
-    }
-    .imagenseis{
-        background-size: cover;
-    }
-    
+  body {
+    font-size: 1rem;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .logo {
+    width: 80px;
+    padding: 2px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fotofondo {
+    height: 200px;
+  }
+  .fotofondo .contenido-fotofondo {
+    width: 90%;
+    padding: 8px;
+    top: 60px;
+  }
+  .fotofondo .contenido-fotofondo .colorblanco {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .actividades div {
+    margin: auto;
+    width: 90vw;
+    grid-template-columns: 80%;
+  }
+  .actividades div .textoimagen {
+    width: 90%;
+  }
+  .imagenesconectada {
+    margin-left: 20px;
+  }
+  .imagenesconectada .textoimagen {
+    width: 300px;
+  }
+  .navpag ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  footer img {
+    display: none;
+  }
+  .navbar-brand {
+    width: 120px;
+  }
+  .gallerycontainer {
+    display: grid;
+    grid-template-columns: 1.1fr;
+    grid-template-rows: repeat(6, 200px);
+    gap: 10px 5px;
+    grid-template-areas: "imagenuno" "imagendos" "imagenseis" "imagencuatro" "imagencinco" "imagentres";
+    justify-content: center;
+    padding: 15px;
+  }
+  .gallerycontainer .imagenuno {
+    background-size: fill;
+  }
+  .gallerycontainer .imagendos {
+    background-size: contain;
+  }
+  .gallerycontainer .imagentres {
+    background-size: cover;
+  }
+  .gallerycontainer .imagencuatro {
+    background-size: cover;
+  }
+  .gallerycontainer .imagencinco {
+    background-size: cover;
+  }
+  .gallerycontainer .imagenseis {
+    background-size: cover;
+  }
+  .contenidopagina {
+    text-align: start;
+    font-size: 15px;
+    margin: 15px;
+  }
+  .contenidopagina ul {
+    margin-left: 0px;
+  }
+  .imagenestexto {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+  }
+  .imagenestexto .nosemuestrachico {
+    display: none;
+  }
+  .fotoaliment {
+    height: 200px;
+  }
+  .fotoaliment .contenido-fotofondoaliment {
+    width: 90%;
+    padding: 8px;
+    top: 60px;
+  }
+  .fotoaliment .contenido-fotofondoaliment .colorblanco {
+    font-weight: 100;
+    font-size: 18px;
+  }
+  .tips {
+    width: 90%;
+    margin: 10px;
+    display: block;
+  }
+  .tips .card {
+    margin: 10px;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+  .tips .card .card-title {
+    font-size: 25px;
+  }
+  .contactoimg {
+    flex-direction: column;
+  }
+  .img-fluidno {
+    display: none;
+  }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7EDE2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+body .gridcontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 0.3fr auto auto 1fr;
+  grid-template-areas: "header header" "nav nav" "fotofondo fotofondo" "actividades actividades" "footer footer";
+  align-items: center;
+}
+body .gridcontainer div {
+  margin: 15px;
+  justify-items: center;
+}
+body .gridcontainer .fotofondo {
+  height: 500px;
+  background-image: url(../images/dietasaludable.jpeg);
+  background-position: center;
+  grid-area: fotofondo;
+}
+body .gridcontainer .fotofondo .contenido-fotofondo {
+  width: 98%;
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+}
+body .gridcontainer .fotofondo .contenido-fotofondo .colorblanco {
+  color: antiquewhite;
+  font-weight: 500;
+}
+body .gridcontainer .actividades {
+  grid-area: actividades;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #4b4e4e;
+}
+body .gridcontainer .actividades .imagenesconectadas {
+  margin: 20px 20px;
+}
+body .gridcontainer .actividades .imagenesconectadas .img {
+  border-radius: 10px;
+}
+body .gridcontainer .actividades .imagenesconectadas .textoimagen {
+  width: 400px;
+}
+body .gridcontainer .actividades .imagenesconectadas .comments {
+  margin: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #F28482;
+  overflow: hidden;
+  padding: 8px;
+  border-style: solid;
+}
+body .gridcontainer .actividades .imagenesconectadas .comments:hover {
+  background-color: #F28482;
+  padding: 8px;
+  color: #eee0e0;
+}
+
+/*# sourceMappingURL=styles.css.map */

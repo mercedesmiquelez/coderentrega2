@@ -1,0 +1,44 @@
+.contactoimg{
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    img {
+        border-radius: 10px;
+        opacity: 0.8;
+        filter:alpha(opacity=80);
+    }
+}
+
+.form-control{
+    color: $colorSalmon;
+}
+
+.img-fluid{
+    margin: 20px;
+    height: 270px;
+    object-fit: contain;
+}
+.img-fluidno{
+    margin: 20px;
+    height: 270px;
+    object-fit: contain;
+}
+.col-md-6{
+    width: 90%;
+}
+.row{
+    width: 90%;
+}
+
+.btn{
+    background-color: #84A59D;
+    color: antiquewhite;
+    border: #24302d;
+}
+
+.alert{
+    margin: 15px;
+    padding: 20px;
+    color: antiquewhite;
+    background-color: $colorSalmon;
+}
