@@ -5,8 +5,7 @@
     }
 
     .header{
-        display: flex;
-        justify-content: space-between;
+        @include flexjc(flex, row, space-between);
         .logo{
             width: 80px;
             padding: 2px;
@@ -126,13 +125,16 @@
             }
         }
     }
+
+    .carousel{
+        align-items: center;
+    }
     
     .tips{
-        width: 90%;
-        margin: 10px;
+        margin: 0;
+        width: 100%;
         display: block;
         .card {
-            margin: 10px;
             padding: 0;
             width: auto;
             height:auto;

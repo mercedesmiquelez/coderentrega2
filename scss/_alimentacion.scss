@@ -4,8 +4,7 @@
     width: 100%;
     padding: 10px;
     ul{
-        display: flex;
-        justify-content: space-evenly;
+        @include flexjc(flex, row, space-evenly);
         .linkdark {
             text-decoration: none;
             margin: 10px;
@@ -109,8 +108,7 @@
     width: 90%;
     margin-left: 50px;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
+    @include flexjc(flex, row, space-around);
     img{
         width: 300px;
         border: 2px solid rgb(194, 193, 193);

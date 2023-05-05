@@ -42,9 +42,8 @@ body{
         } 
         .actividades {
             grid-area: actividades;
-            display: flex;
+            @include flexjc(flex, row, space-evenly);
             flex-wrap: wrap;
-            justify-content: space-evenly;
             color: #4b4e4e;
             .imagenesconectadas{
                 margin: 20px 20px;

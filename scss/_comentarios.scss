@@ -7,8 +7,7 @@
 
 .row{
     margin: auto;
-    display: flex;
-    justify-content: center;
+    @include flexjc(flex, row, center);
     .card{
         width: 18rem;
         margin: 20px;

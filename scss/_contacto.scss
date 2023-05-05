@@ -1,7 +1,6 @@
 .contactoimg{
     width: 98%;
-    display: flex;
-    justify-content: space-around;
+    @include flexjc(flex, row, space-around);
     img {
         border-radius: 10px;
         opacity: 0.8;
@@ -32,6 +31,10 @@
 }
 .row{
     width: 90%;
+    .form-check-input{
+        background-color: #84A59D;
+        border: 3px #24302d;
+    }
 }
 
 .btn{

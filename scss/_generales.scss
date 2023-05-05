@@ -10,8 +10,7 @@ li {
 .header{
     grid-area: header;
     background-color: #84A59D;
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column);
     align-content: center;
     align-items: center;
     .header__logo{
@@ -22,8 +21,7 @@ li {
 nav{
     grid-area: nav;
     ul {
-    display: flex;
-    justify-content: space-around;
+    @include flexjc(flex, row, space-around);
     background-color: $colorSalmon;
     .link{
         text-decoration: none;
@@ -40,8 +38,7 @@ nav{
 }
 footer {
     grid-area: footer;
-    display: flex;
-    justify-content: space-around;
+    @include flexjc(flex, row, space-around);
     padding-top: 20px;
     background-color: $colorVerde;
     color: #F7EDE2;

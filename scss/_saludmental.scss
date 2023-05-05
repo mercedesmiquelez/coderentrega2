@@ -3,14 +3,12 @@ ol, ul {
 }
 .tips{
     margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    @include flexjc(flex, row, center);
     .card {
         margin: 20px;
         padding: 10px;
         width: 28rem;
-        height: 35rem;
+        height: auto;
         .card-title{
             font-size: 25px;
             color: $colorTexto;
