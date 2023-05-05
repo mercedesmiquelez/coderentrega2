@@ -5,7 +5,7 @@
     }
 
     .header{
-        @include flexjc(flex, row, space-between);
+        @include flexjc(flex, column, space-between);
         .logo{
             width: 80px;
             padding: 2px;
