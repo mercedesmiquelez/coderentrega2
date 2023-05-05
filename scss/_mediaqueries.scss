@@ -5,7 +5,9 @@
     }
 
     .header{
-        @include flexjc(flex, column, space-between);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .logo{
             width: 80px;
             padding: 2px;
