@@ -19,13 +19,13 @@
     <header>
         <!-- Indice de navegacion + logo -->
         <div class="navpag">
-            <ul>
+            <ul class="navi">
                 <li><a class="linkdark" href="../pages/contacto.html">Contactanos!</a></li>
                 <img class="icon" src="../images/favi.png" alt="">
-                <li><a class="link" href="../index.html">Home</a></li>
-                <li><a class="link" href="../pages/alimentacion.html">Alimentacion Saludable</a></li>
-                <li><a class="link" href="../pages/saludmental.html">Salud Mental</a></li>
-                <li><a class="link" href="../pages/ejerciciofisico.html">Ejercicio Fisico</a></li>
+                <li><a class="linkpag" href="../index.html">Home</a></li>
+                <li><a class="linkpag" href="../pages/alimentacion.html">Alimentacion Saludable</a></li>
+                <li><a class="linkpag" href="../pages/saludmental.html">Salud Mental</a></li>
+                <li><a class="linkpag" href="../pages/ejerciciofisico.html">Ejercicio Fisico</a></li>
             </ul>
         </div>
     </header>
@@ -37,14 +37,14 @@
                 <img src="../images/contacto1.jpg" class="img-fluidno" alt="terapia grupal">
                 <img src="../images/contacto2.jpg" class="img-fluid" alt="piedras en equilibrio">
             </section>
-                <div class="row g-3">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre completo">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-                    </div>
-                  </div>
+            <div class="col-md-6">
+              <label for="inputtext4" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="inputPassword4">
+            </div>
                   <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
                     <input type="email" class="form-control" id="inputEmail4">
@@ -53,13 +53,10 @@
                     <label for="inputPassword4" class="form-label">Contrasena</label>
                     <input type="password" class="form-control" id="inputPassword4">
                   </div>
-                  <section class="contactoimg">
-                    <img src="../images/contacto3.jpg" class="img-fluid" alt="gente saludando al sol">
-                    <img src="../images/contacto4.jpg" class="img-fluidno" alt="flor diente de leon">
-                </section>
+
                 
                 <fieldset class="row mb-3">
-                  <legend class="col-form-label col-sm-2 pt-0">Programa a seleccionar</legend>
+                  <legend class="col-form-label col-sm-2 pt-0"><strong> Programa a seleccionar</strong></legend>
                   <div class="col-sm-10">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
@@ -81,7 +78,7 @@
                       </div>
                 </fieldset>
                 <div class="row mb-3">
-                  <div class="col-sm-10 offset-sm-2">
+                  <div class="col-sm-10">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="gridCheck1">
                       <label class="form-check-label" for="gridCheck1">
@@ -96,6 +93,10 @@
                   </div>
                 <button type="submit" class="btn btn-primary">Enviar formulario</button>
               </form>
+              <section class="contactoimg">
+                <img src="../images/contacto3.jpg" class="img-fluid" alt="gente saludando al sol">
+                <img src="../images/contacto4.jpg" class="img-fluidno" alt="flor diente de leon">
+            </section>
 
                               <!-- Frase final por contacto -->
               <section>

@@ -27,10 +27,14 @@
     object-fit: contain;
 }
 .col-md-6{
-    width: 90%;
+    width: 100%;
 }
 .row{
-    width: 90%;
+    width: 100%;
+    .col-form-label{
+        margin: 30px 0;
+        color: dimgrey;
+    }
     .form-check-input{
         background-color: #84A59D;
         border: 3px #24302d;

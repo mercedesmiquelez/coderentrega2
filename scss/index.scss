@@ -35,8 +35,11 @@ body{
                 position: relative;
                 top: 200px;
                 .colorblanco {
+                    font-family: 'Roboto Serif', serif;
                     color: antiquewhite;
-                    font-weight: 500;
+                    font-size: 27px;
+                    font-weight: 300;
+                    font-style: italic;
                 }
             }
         } 
@@ -46,25 +49,29 @@ body{
             flex-wrap: wrap;
             color: #4b4e4e;
             .imagenesconectadas{
-                margin: 20px 20px;
+                margin: 0 20px 20px 20px;
                 .img{
                     border-radius: 10px;
+                    padding-bottom: 10px;
                 }
                 .textoimagen {
                     width: 400px;
+                    margin: 10px 0;
                 }
-                .comments{
-                    margin: 15px;
-                    text-decoration: none;
-                    border-radius: 6px;
-                    color: $colorSalmon;
-                    overflow: hidden;
-                    padding: 8px;
-                    border-style: solid;  
-                    &:hover{
-                        background-color: $colorSalmon;
+                div{
+                    margin: 25px 0 15px 0;
+                    .comments{
+                        text-decoration: none;
+                        border-radius: 6px;
+                        color: $colorSalmon;
+                        overflow: hidden;
                         padding: 8px;
-                        color: #eee0e0;
+                        border-style: solid;  
+                        &:hover{
+                            background-color: $colorSalmon;
+                            padding: 8px;
+                            color: #eee0e0;
+                        }
                     }
                 }
             }

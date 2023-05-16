@@ -4,7 +4,6 @@ img {
 }
 
 li {
-  padding: 10px;
   list-style-type: none;
 }
 
@@ -30,6 +29,9 @@ nav ul {
   justify-content: space-around;
   background-color: #F28482;
 }
+nav ul li {
+  padding: 10px;
+}
 nav ul .link {
   text-decoration: none;
   margin: 10px;
@@ -42,12 +44,56 @@ nav ul .link:hover {
   color: #3d6c60;
 }
 
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navpag {
+  background-color: #84A59D;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.navpag .navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navpag .navi li {
+  padding: 10px;
+}
+.navpag .navi .linkdark {
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px;
+  color: #f6efe7;
+  font-weight: 700;
+  font-size: x-large;
+  border-radius: 5px;
+}
+.navpag .navi .icon {
+  height: 50px;
+  padding: 2px;
+}
+.navpag .navi .linkpag {
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px;
+  color: #f6efe7;
+  border-radius: 5px;
+}
+.navpag .navi .linkpag:hover {
+  background-color: #bfd7b3;
+  color: #3d6c60;
+}
+
 footer {
   grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 5px;
   background-color: #84A59D;
   color: #F7EDE2;
   align-items: center;
@@ -101,8 +147,11 @@ body .gridcontainer .fotofondo .contenido-fotofondo {
   top: 200px;
 }
 body .gridcontainer .fotofondo .contenido-fotofondo .colorblanco {
+  font-family: "Roboto Serif", serif;
   color: antiquewhite;
-  font-weight: 500;
+  font-size: 27px;
+  font-weight: 300;
+  font-style: italic;
 }
 body .gridcontainer .actividades {
   grid-area: actividades;
@@ -113,16 +162,20 @@ body .gridcontainer .actividades {
   color: #4b4e4e;
 }
 body .gridcontainer .actividades .imagenesconectadas {
-  margin: 20px 20px;
+  margin: 0 20px 20px 20px;
 }
 body .gridcontainer .actividades .imagenesconectadas .img {
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 body .gridcontainer .actividades .imagenesconectadas .textoimagen {
   width: 400px;
+  margin: 10px 0;
 }
-body .gridcontainer .actividades .imagenesconectadas .comments {
-  margin: 15px;
+body .gridcontainer .actividades .imagenesconectadas div {
+  margin: 25px 0 15px 0;
+}
+body .gridcontainer .actividades .imagenesconectadas div .comments {
   text-decoration: none;
   border-radius: 6px;
   color: #F28482;
@@ -130,46 +183,10 @@ body .gridcontainer .actividades .imagenesconectadas .comments {
   padding: 8px;
   border-style: solid;
 }
-body .gridcontainer .actividades .imagenesconectadas .comments:hover {
+body .gridcontainer .actividades .imagenesconectadas div .comments:hover {
   background-color: #F28482;
   padding: 8px;
   color: #eee0e0;
-}
-
-.navpag {
-  background-color: #84A59D;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-}
-.navpag ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.navpag ul .linkdark {
-  text-decoration: none;
-  margin: 10px;
-  padding: 8px;
-  color: #f6efe7;
-  font-weight: 700;
-  font-size: x-large;
-  border-radius: 5px;
-}
-.navpag ul .icon {
-  height: 50px;
-  padding: 5px;
-}
-.navpag ul .link {
-  text-decoration: none;
-  margin: 10px;
-  padding: 8px;
-  color: #f6efe7;
-  border-radius: 5px;
-}
-.navpag ul .link:hover {
-  background-color: #bfd7b3;
-  color: #3d6c60;
 }
 
 .fotoaliment {
@@ -179,7 +196,7 @@ body .gridcontainer .actividades .imagenesconectadas .comments:hover {
   grid-area: fotofondo;
 }
 .fotoaliment .contenido-fotofondoaliment {
-  width: 80%;
+  width: 95%;
   background-color: rgba(51, 47, 47, 0.8);
   box-shadow: 2px 4px 8px rgb(68, 67, 67);
   border-radius: 5px;
@@ -187,11 +204,15 @@ body .gridcontainer .actividades .imagenesconectadas .comments:hover {
   padding: 50px 0;
   margin: 5px auto;
   position: relative;
-  top: 100px;
+  top: 70px;
 }
 .fotoaliment .contenido-fotofondoaliment .colorblanco {
+  font-family: "Roboto Serif", serif;
+  padding: 5px;
+  font-style: italic;
   color: antiquewhite;
-  font-size: 1.6rem;
+  font-size: 27px;
+  font-weight: 300;
 }
 
 .gallerycontainer {
@@ -259,28 +280,65 @@ body .gridcontainer .actividades .imagenesconectadas .comments:hover {
 }
 
 .encabezado__titulo {
-  font-weight: 300;
+  width: 100%;
 }
 
-.navbar-brand {
-  width: 200px;
+.principal {
+  font-family: "Roboto Serif", serif;
+  font-style: italic;
+  color: #F28482;
+  font-size: 25px;
 }
 
 .row {
-  margin: auto;
+  margin: 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+.row .carouselExampleAutoplaying {
+  width: 85%;
+}
 .row .card {
+  background-color: #f6efe7;
+  border: none;
   width: 18rem;
   margin: 20px;
+}
+.row .card .card-title {
+  color: dimgray;
+}
+.row .card .card-img-top {
+  border-radius: 150px;
+  border: 1px solid rgb(211, 208, 208);
+}
+.row .card .card-text {
+  font-family: "Roboto Serif", serif;
+  font-style: italic;
+  font-weight: 300;
 }
 .row .card img {
   padding: 8px;
 }
 .row .card .btn {
+  border: 1.5px solid #ccc5b9;
+  height: 240px;
+  font-family: "Roboto Serif", serif;
+  font-style: italic;
+  font-weight: 300;
+  background-color: #ffffff;
+  color: #9d8189;
+}
+.row .btn2 {
+  width: 100%;
   background-color: #F28482;
+  margin-bottom: 10px;
+}
+.row .btn2 a {
+  font-family: "Roboto Serif", serif;
+  font-style: italic;
+  font-size: 20px;
+  text-decoration: none;
   color: #f6efe7;
 }
 
@@ -316,11 +374,15 @@ body .gridcontainer .actividades .imagenesconectadas .comments:hover {
 }
 
 .col-md-6 {
-  width: 90%;
+  width: 100%;
 }
 
 .row {
-  width: 90%;
+  width: 100%;
+}
+.row .col-form-label {
+  margin: 30px 0;
+  color: dimgrey;
 }
 .row .form-check-input {
   background-color: #84A59D;
@@ -345,7 +407,6 @@ img {
 }
 
 li {
-  padding: 10px;
   list-style-type: none;
 }
 
@@ -371,6 +432,9 @@ nav ul {
   justify-content: space-around;
   background-color: #F28482;
 }
+nav ul li {
+  padding: 10px;
+}
 nav ul .link {
   text-decoration: none;
   margin: 10px;
@@ -383,12 +447,56 @@ nav ul .link:hover {
   color: #3d6c60;
 }
 
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navpag {
+  background-color: #84A59D;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.navpag .navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navpag .navi li {
+  padding: 10px;
+}
+.navpag .navi .linkdark {
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px;
+  color: #f6efe7;
+  font-weight: 700;
+  font-size: x-large;
+  border-radius: 5px;
+}
+.navpag .navi .icon {
+  height: 50px;
+  padding: 2px;
+}
+.navpag .navi .linkpag {
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px;
+  color: #f6efe7;
+  border-radius: 5px;
+}
+.navpag .navi .linkpag:hover {
+  background-color: #bfd7b3;
+  color: #3d6c60;
+}
+
 footer {
   grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 5px;
   background-color: #84A59D;
   color: #F7EDE2;
   align-items: center;
@@ -408,6 +516,10 @@ footer .logofooter {
 
 ol, ul {
   padding-left: 0;
+}
+
+.carousel {
+  margin: 10px;
 }
 
 .tips {
@@ -433,6 +545,10 @@ ol, ul {
 
 ol, ul {
   padding-left: 0;
+}
+
+.row > * {
+  width: 75%;
 }
 
 .tips {
@@ -489,7 +605,7 @@ ol, ul {
   body .gridcontainer .actividades .imagenesconectadas .textoimagen {
     width: 90vw;
   }
-  .navpag ul {
+  .navpag .navi {
     flex-direction: column;
     align-items: center;
   }
@@ -500,6 +616,12 @@ ol, ul {
   }
   footer img {
     display: none;
+  }
+  .principal {
+    font-size: 20px;
+  }
+  .principal p {
+    width: 100%;
   }
   .navbar-brand {
     width: 120px;
@@ -579,6 +701,9 @@ ol, ul {
   .contactoimg {
     flex-direction: column;
   }
+  .img-fluid {
+    margin: 0;
+  }
   .img-fluidno {
     display: none;
   }
@@ -601,6 +726,9 @@ ol, ul {
     top: 100px;
     padding: 20px 0;
   }
+  body .gridcontainer .fotofondo .contenido-fotofondo .colorblanco {
+    font-size: 20px;
+  }
   body .gridcontainer .actividades .imagenesconectadas {
     margin: 5px 5px;
   }
@@ -620,13 +748,19 @@ ol, ul {
     margin-bottom: 0px;
     align-items: center;
   }
-  .navpag ul .link {
+  .navpag ul .linkpag {
     display: inline-block;
     padding: 2px;
   }
   .navpag ul .linkdark {
     margin: 0px;
     padding: 6px;
+  }
+  .principal {
+    font-size: 22px;
+  }
+  .principal p {
+    width: 100%;
   }
   .fotoaliment {
     height: 250px;

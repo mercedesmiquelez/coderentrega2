@@ -1,6 +1,9 @@
 ol, ul {
     padding-left: 0;
 }
+.row>* {
+    width: 75%;
+}
 .tips{
     margin: auto;
     @include flexjc(flex, row, center);

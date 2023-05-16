@@ -1,22 +1,60 @@
 .encabezado__titulo{
-    font-weight: 300;
-}
-.navbar-brand{
-    width: 200px;
+    width: 100%;
 }
 
-.row{
-    margin: auto;
+.principal{
+    font-family: 'Roboto Serif', serif;
+    font-style: italic;
+    color: #F28482;
+    font-size: 25px;
+}
+
+.row {
+    margin: 0px 0px;
     @include flexjc(flex, row, center);
+    .carouselExampleAutoplaying{
+        width: 85%;
+    }
     .card{
+        background-color: #f6efe7;
+        border: none;
         width: 18rem;
         margin: 20px;
+        .card-title{
+            color: dimgray;
+        }
+        .card-img-top{
+            border-radius: 150px;
+            border: 1px solid rgb(211, 208, 208);
+        }
+        .card-text{
+            font-family: 'Roboto Serif', serif;
+            font-style: italic;
+            font-weight: 300;
+        }
         img{
             padding: 8px;
         }
         .btn{
-            background-color: #F28482;
-            color: #f6efe7;
+            border: 1.5px solid #ccc5b9;
+            height: 240px;
+            font-family: 'Roboto Serif', serif;
+            font-style: italic;
+            font-weight: 300;
+            background-color: #ffffff;
+            color: #9d8189;
+        }
+    }
+    .btn2{  
+        width: 100%;
+        background-color: #F28482;
+        margin-bottom: 10px;
+        a{
+            font-family: 'Roboto Serif', serif;
+        font-style: italic;
+        font-size: 20px;
+        text-decoration: none;
+        color: #f6efe7;
         }
     }
 }

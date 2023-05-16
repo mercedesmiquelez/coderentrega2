@@ -3,7 +3,6 @@ img{
 }
 
 li {
-    padding: 10px;
     list-style-type: none;
 }
 
@@ -23,6 +22,9 @@ nav{
     ul {
     @include flexjc(flex, row, space-around);
     background-color: $colorSalmon;
+    li{
+        padding: 10px;
+    }
     .link{
         text-decoration: none;
         margin: 10px;
@@ -36,10 +38,54 @@ nav{
     }
     }
 }
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.navpag {
+    background-color: #84A59D;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    .navi{
+        @include flexjc(flex, row, space-evenly);
+        li{
+            padding: 10px;
+        }
+        .linkdark {
+            text-decoration: none;
+            margin: 10px;
+            padding: 8px;
+            color: #f6efe7;
+            font-weight: 700;
+            font-size: x-large;
+            border-radius: 5px;
+        }
+        .icon{
+            height: 50px;
+            padding: 2px;
+        }
+        .linkpag{
+            text-decoration: none;
+            margin: 10px;
+            padding: 8px;
+            color: #f6efe7;
+            border-radius: 5px;
+            &:hover{
+                background-color: #bfd7b3;
+                color: #3d6c60;
+            }
+        }
+    }
+}
+
 footer {
     grid-area: footer;
     @include flexjc(flex, row, space-around);
-    padding-top: 20px;
+    padding-top: 5px;
     background-color: $colorVerde;
     color: #F7EDE2;
     align-items: center;
