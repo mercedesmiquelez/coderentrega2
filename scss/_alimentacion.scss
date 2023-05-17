@@ -67,12 +67,17 @@
     }
 }
 .contenidopagina{
+
     text-align: justify;
     margin: 20px;
     color: #F28482;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     width: 95%;
+    .str{
+        font-weight: 700;
+        font-style: italic;
+    }
 }
 
 .imagenestexto{

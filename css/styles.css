@@ -260,9 +260,13 @@ body .gridcontainer .actividades .imagenesconectadas div .comments:hover {
   text-align: justify;
   margin: 20px;
   color: #F28482;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   width: 95%;
+}
+.contenidopagina .str {
+  font-weight: 700;
+  font-style: italic;
 }
 
 .imagenestexto {
@@ -390,6 +394,7 @@ body .gridcontainer .actividades .imagenesconectadas div .comments:hover {
 }
 
 .btn {
+  margin-bottom: 10px;
   background-color: #84A59D;
   color: antiquewhite;
   border: #24302d;
@@ -698,11 +703,16 @@ ol, ul {
   .tips .card .card-title {
     font-size: 25px;
   }
+  .row > * {
+    width: 100%;
+  }
   .contactoimg {
-    flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
   .img-fluid {
-    margin: 0;
+    height: auto;
+    width: 270px;
   }
   .img-fluidno {
     display: none;

@@ -151,11 +151,16 @@
             }
         }
     }
+    .row > * {
+        width: 100%;
+    }
     .contactoimg{
-        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
     .img-fluid{
-        margin: 0;
+        height: auto;
+        width: 270px;
     }
 
     .img-fluidno{
